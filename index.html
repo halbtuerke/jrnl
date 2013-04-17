@@ -232,13 +232,13 @@ python setup.py install
 
 <pre><code>jrnl Implemented endless scrolling on the #frontend of our website.
 </code></pre>
-
-<p>your bash will chop off everything after the <code>#</code> before passing it to <em>jrnl</em>). To avoid this, wrap your input into quotation marks like this:</p>
+  
+  <p>your bash will chop off everything after the <code>#</code> before passing it to <em>jrnl</em>). To avoid this, wrap your input into quotation marks like this:</p>
 
 <pre><code>jrnl "Implemented endless scrolling on the #frontend of our website."
 </code></pre>
-
-<p>Or use the built-in prompt or an external editor to compose your entries.</p>
+  
+  <p>Or use the built-in prompt or an external editor to compose your entries.</p>
 </blockquote>
 
 <h3>DayOne Integration</h3>
@@ -310,11 +310,14 @@ with open("my_journal.txt") as f:
 </ul>
 <h1>Changelog</h1>
 
-<h3>1.0.2 (April 17, 2013)</h3>
+<h3>1.0.3 (April 17, 2013)</h3>
 
 <ul>
 <li class="badge"><span class="change-improved">Improved</span> Installs pycrypto by default</li>
 <li class="badge"><span class="change-improved">Improved</span> Removed clint in favour of colorama</li>
+<li class="badge"><span class="change-fixed">Fixed</span> Fixed a bug where showing tags failed when no tags are defined.</li>
+<li class="badge"><span class="change-fixed">Fixed</span> Improvements to config parsing (Thanks <a href="https://github.com/alapolloni">alapolloni</a>)</li>
+<li class="badge"><span class="change-fixed">Fixed</span> Fixes readline support on Windows</li>
 <li class="badge"><span class="change-fixed">Fixed</span> Smaller fixes and typos</li>
 </ul>
 
