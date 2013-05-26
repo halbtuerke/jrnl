@@ -51,9 +51,9 @@ class Entry:
         has_body = len(self.body) > 20 or not all(char in (" ", "\n") for char in self.body)
 
         return "{title}{sep}{body}\n".format(
-            title=title,
+            title=title.encode('utf-8'),
             sep="\n" if has_body else "",
-            body=body if has_body else "",
+            body=body.encode('utf-8') if has_body else "",
         )
 
     def __repr__(self):
